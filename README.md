@@ -2,18 +2,17 @@
 
 
 #### Prerequisites: 
-1. AWS Account
-2. Account in https://serverless.com
+1. AWS Account; create an IAM role with Admin Access.
+2. Account in https://serverless.com; add app and add deploymment profile in the account.
 
 
 #### Steps:
-
 1. Create initial template:
 ```
 $ serverless create --template aws-nodejs
 ```
 
-2. Attach an event to the Lambda function which will trigger function and update other required properties like app, org etc in the serverless.yml file
+2. Attach an event to the Lambda function which will trigger function and update other required properties like app, org, events etc in the serverless.yml file
 
 3. Login to severless account
 ```
@@ -24,7 +23,7 @@ $ sls login
 ```
 $ serverless deploy
 ```
-What it does in the background for us:
+What it does in the background:
 ```
 Serverless: Creating Stack...
 Serverless: Stack create finished...
@@ -53,7 +52,5 @@ layers:
 Serverless: Publishing service to the Serverless Dashboard...
 Serverless: Successfully published your service to the Serverless Dashboard: https://dashboard.serverless.com/tenants/xxxxx/applications/serverless-hello-app/services/hello-serverless/stage/dev/region/us-east-1
 ```
-
-
 
 Ref: https://www.serverless.com/learn/courses/full-stack-application-development-on-aws/
