@@ -4,7 +4,7 @@ module.exports.hello = async event => {
   return {
     statusCode: 200,
     body: JSON.stringify(
-      "Hello Suvasish! \n--Serverless!"
+      "Hello Suvasish! --Serverless!"
     ),
   };
 
